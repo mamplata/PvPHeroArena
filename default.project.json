@@ -1,0 +1,48 @@
+{
+  "name": "PvPHeroArena",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Shared": {
+        "$path": "src/ReplicatedStorage/Shared"
+      }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "ArenaBootstrap": {
+        "$path": "src/ServerScriptService/ArenaBootstrap.server.lua"
+      },
+      "CombatServer": {
+        "$path": "src/ServerScriptService/CombatServer.server.lua"
+      },
+      "MatchServer": {
+        "$path": "src/ServerScriptService/MatchServer.server.lua"
+      },
+      "BoundaryService": {
+        "$path": "src/ServerScriptService/BoundaryService.server.lua"
+      },
+      "MVPTestRunner": {
+        "$path": "src/ServerScriptService/MVPTestRunner.server.lua"
+      },
+      "RuntimeLogCollector": {
+        "$path": "src/ServerScriptService/RuntimeLogCollector.server.lua"
+      }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "CombatClient": {
+          "$path": "src/StarterPlayer/StarterPlayerScripts/CombatClient.client.lua"
+        },
+        "CombatHUD": {
+          "$path": "src/StarterPlayer/StarterPlayerScripts/CombatHUD.client.lua"
+        },
+        "ClientLogRelay": {
+          "$path": "src/StarterPlayer/StarterPlayerScripts/ClientLogRelay.client.lua"
+        }
+      }
+    }
+  }
+}
