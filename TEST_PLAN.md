@@ -10,7 +10,7 @@ This document is the manual QA checklist for testing the current MVP in Roblox S
 2. Start Rojo from the project folder:
 
 ```bash
-cd /home/nana7/Roblox/PvPHeroArena
+cd <project-folder>
 rojo serve default.project.json
 ```
 

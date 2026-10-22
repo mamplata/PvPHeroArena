@@ -4,10 +4,10 @@ This guide explains how to open, sync, test, and save `PvPHeroArena`.
 
 ## 1. Project location
 
-The project is located at:
+The project is located in your local project folder:
 
 ```text
-/home/nana7/Roblox/PvPHeroArena
+<project-folder>
 ```
 
 The source files are the source of truth. Edit the `.lua` and `.json` files in this folder, then let Rojo sync them into Studio.
@@ -21,10 +21,10 @@ You need:
 - Rojo command-line tool.
 - This project folder.
 
-Rojo is already installed in this workspace. If the command is unavailable in your terminal, use:
+Rojo must be available on your terminal PATH. If the command is unavailable, install Rojo with Rokit or use the path shown by your local installation.
 
 ```bash
-/home/nana7/.rokit/bin/rojo
+rojo
 ```
 
 ## 3. Start the Rojo server
@@ -32,7 +32,7 @@ Rojo is already installed in this workspace. If the command is unavailable in yo
 Open a terminal and run:
 
 ```bash
-cd /home/nana7/Roblox/PvPHeroArena
+cd <project-folder>
 rojo serve default.project.json
 ```
 
@@ -137,7 +137,7 @@ The buffer keeps the newest 250 entries and is cleared when the server restarts.
 
 ## 9. Make a code change
 
-1. Edit a source file in `/home/nana7/Roblox/PvPHeroArena`.
+1. Edit a source file in your project folder.
 2. Save the file.
 3. Wait for Rojo to sync.
 4. Stop and restart Play when the change affects server startup or generated objects.
@@ -157,7 +157,7 @@ Do not edit Rojo-managed scripts directly in Studio. Edit the source files and l
 To create a local `.rbxlx` file:
 
 ```bash
-cd /home/nana7/Roblox/PvPHeroArena
+cd <project-folder>
 rojo build default.project.json -o PvPHeroArena.rbxlx
 ```
 
@@ -193,7 +193,7 @@ Keep the Rojo source folder as the code source. Publishing Studio does not repla
 Run the full path:
 
 ```bash
-/home/nana7/.rokit/bin/rojo serve default.project.json
+rojo serve default.project.json
 ```
 
 ### Rojo plugin cannot connect
@@ -206,7 +206,7 @@ Run the full path:
 ### Scripts do not appear
 
 - Confirm the plugin is connected to `PvPHeroArena`.
-- Confirm the terminal working directory is `/home/nana7/Roblox/PvPHeroArena`.
+- Confirm the terminal working directory is your project folder.
 - Check `default.project.json` for mapping errors.
 - Reconnect Rojo after changing the project tree.
 
